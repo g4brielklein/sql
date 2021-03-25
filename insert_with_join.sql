@@ -19,3 +19,7 @@ SELECT
 FROM customers.customer1
 GROUP BY id) customer1
 LEFT JOIN customers.customer_list cl ON customer1.id = CAST(cl.id AS BIGINT)
+
+/*
+INNER JOIN customer.customer_list cl ON customer1.id = CAST(cl.id AS BIGINT)
+*/
